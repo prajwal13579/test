@@ -34,3 +34,8 @@ fs.rename('sample.txt', 'sample2.txt',
     if (err) throw err
     console.log('Name changed!')
   })
+
+fs.unlink('sample2.txt', (err) => {
+  if (err) throw err
+  console.log('File test.txt deleted successfully!')
+})
